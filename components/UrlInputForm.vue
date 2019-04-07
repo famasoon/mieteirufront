@@ -1,0 +1,25 @@
+<template>
+  <div class="field has-addons">
+    <div class="control">
+      <input
+        v-model="name"
+        type="text"
+        class="input"
+        placeholder="e.g.: example.com"
+      />
+    </div>
+    <div class="control">
+      <nuxt-link :to="name" , class="button is-info">GO</nuxt-link>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  data: function() {
+    return {
+      name: ''
+    }
+  }
+}
+</script>

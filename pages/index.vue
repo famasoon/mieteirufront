@@ -1,10 +1,18 @@
 <template>
-  <section class="hero is-primary is-bold is-medium">
-    <div class="hero-body has-text-centered">
-      <h1 class="title">mietei.ru</h1>
-      <h2 class="subtitle">
-        mietei.ru is allows you to scan to the domains and IP address
-      </h2>
-    </div>
-  </section>
+  <div>
+    <index-banner />
+    <url-input-form />
+  </div>
 </template>
+
+<script>
+import IndexBanner from '~/components/IndexBanner.vue'
+import UrlInputForm from '~/components/UrlInputForm.vue'
+
+export default {
+  components: {
+    IndexBanner,
+    UrlInputForm
+  }
+}
+</script>
