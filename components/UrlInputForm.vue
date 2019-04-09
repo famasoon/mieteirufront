@@ -9,7 +9,12 @@
       />
     </div>
     <div class="control">
-      <nuxt-link :to="name" , class="button is-info">GO</nuxt-link>
+      <nuxt-link
+        :to="{ name: 'result-slug', params: { slug: name } }"
+        ,
+        class="button is-info"
+        >GO</nuxt-link
+      >
     </div>
   </div>
 </template>
